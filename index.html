@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nigeria Phone Number Validator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <img class="nnewitechfacultylogo" src="" alt="Nnewi Tech Faculty Logo">
+        <h2>Telephone Number Validator</h2>
+        <div class="container">
+            <div class="background">
+                <div class="camera"></div>
+            </div>
+            <label for="user-input">Enter a phone Number</label>
+            
+        </div>
+    </main>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phone Number Validator</title>
+</head>
+<body>
+  <h1>Phone Number Validator</h1>
+  <input type="text" id="phoneInput" placeholder="Enter phone number">
+  <button onclick="validate()">Validate</button>
+  <p id="result"></p>
+
+  <script src="script.js"></script>
+  <script>
+    function validate() {
+      const phoneInput = document.getElementById('phoneInput').value;
+      const result = validatePhoneNumber(phoneInput);
+      const resultText = `${phoneInput} is a valid phone number: ${result}`;
+      document.getElementById('result').textContent = resultText;
+    }
+  </script>
+</body>
+</html>
